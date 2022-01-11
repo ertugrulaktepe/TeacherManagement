@@ -5,3 +5,12 @@
     }
   }
 }
+
+main {
+  margin-top: 50px;
+
+  .quiz,
+  .status {
+    border-right: 1px solid red;
+  }
+}

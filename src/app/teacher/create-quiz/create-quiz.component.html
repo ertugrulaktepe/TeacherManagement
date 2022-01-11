@@ -3,9 +3,16 @@
         <div class="container">
             <div class="col-lg-12">
                 <form action="submit" (ngSubmit)="postQuiz(quiz.value)" class="form-group" [formGroup]="quiz">
+                    <div class="quiz-name">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Sınav Adı</mat-label>
+                            <input formControlName="quizName" matInput>
+                        </mat-form-field>
+                    </div>
                     <div class="prompt">
                         <mat-form-field appearance="fill">
                             <mat-label>Soru Giriniz</mat-label>
+
                             <textarea formControlName="prompt" matInput></textarea>
                         </mat-form-field>
                     </div>

@@ -15,8 +15,10 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { CreateQuizComponent } from './teacher/create-quiz/create-quiz.component';
 import { HttpClientModule } from '@angular/common/http';
 import { StudentComponent } from './student/student.component';
-
+import { CountdownModule } from 'ngx-countdown';
 import { SignComponent } from './sign/sign.component';
+import { QuizComponent } from './student/quiz/quiz.component';
+
 
 
 
@@ -28,7 +30,8 @@ import { SignComponent } from './sign/sign.component';
     TeacherComponent,
     CreateQuizComponent,
     StudentComponent,
-    SignComponent
+    SignComponent,
+    QuizComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,6 +46,7 @@ import { SignComponent } from './sign/sign.component';
     AppRoutingModule,
     MatProgressSpinnerModule,
     HttpClientModule,
+    CountdownModule
 
 
 

@@ -18,8 +18,46 @@
         </div>
     </div>
 </nav>
-{{data.length}}
-<div class="questions-body">
+<main class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="quiz ">
+                    <h4>SINAVLARIM</h4>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item" *ngFor="let datas of data">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-mdb-toggle="collapse"
+                                    data-mdb-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    {{datas.quizName.toUpperCase()}}
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-mdb-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <a [routerLink]="['/quiz, datas.id']">Sınava Git</a>
+                                    <countdown class="ml-3" [config]="{leftTime: 600}"></countdown>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4">
+                <div class="status ">
+                    <h4>SINAVLARIM</h4>
+                </div>
+
+            </div>
+            <div class="col-lg-4">
+                <h4>SINAVLARIM</h4>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- <div class="questions-body">
     <div class="card" *ngFor="let datas of data">
         <div class="card-body">
             <p class="card-text">
@@ -31,4 +69,4 @@
             <button class="btn btn-primary">{{datas.answerD}}</button>
         </div>
     </div>
-</div>
+</div> -->

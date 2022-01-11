@@ -1,43 +1,27 @@
 {
   "posts": [
     {
-      "prompt": "“Sinekli Bakkal” Romanının Yazarı Aşağıdakilerden Hangisidir?",
-      "answerA": "Reşat Nuri Güntekin",
+      "quizName": "genel kültür sınavı",
+      "prompt": " “Sinekli Bakkal” Romanının Yazarı Aşağıdakilerden Hangisidir?",
+      "answerA": " Reşat Nuri Güntekin",
       "answerB": "Halide Edip Adıvar",
       "answerC": "Ziya Gökalp",
       "answerD": "Ömer Seyfettin",
+      "isCorrect": "B",
       "id": 1
     },
     {
+      "quizName": "genel kültür sınavı 2",
       "prompt": "Aşağıda Verilen İlk Çağ Uygarlıklarından Hangisi Yazıyı İcat Etmiştir?",
       "answerA": "Hititler",
       "answerB": "Elamlar",
       "answerC": "Sümerler",
       "answerD": "Urartular",
-      "isCorrect": "B",
+      "isCorrect": "C",
       "id": 2
-    },
-    {
-      "prompt": "Tsunami Felaketinde En Fazla Zarar Gören Güney Asya Ülkesi Aşağıdakilerden Hangisidir?",
-      "answerA": "Endonezya",
-      "answerB": " Srilanka",
-      "answerC": "Tayland",
-      "answerD": "Hindistan",
-      "isCorrect": "A",
-      "id": 3
-    },
-    {
-      "prompt": "test 1",
-      "answerA": "deneme1",
-      "answerB": "deneme2",
-      "answerC": "deneme3",
-      "answerD": "deneme4",
-      "isCorrect": "A",
-      "id": 4
     }
   ],
   "comments": [
-   
     {
       "userName": "ertugrul",
       "password": "12",

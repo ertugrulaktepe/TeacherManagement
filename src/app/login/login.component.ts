@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { map } from 'rxjs/operators'
 import { Observable, of, Subject, timer } from 'rxjs';
 import { LoginService } from '../login.service';
@@ -33,9 +33,9 @@ export class LoginComponent implements OnInit {
 
 
   loginUser = new FormGroup({
-    userName: new FormControl(''),
-    password: new FormControl(''),
-    changeUser: new FormControl('')
+    userName: new FormControl('', Validators.required),
+    password: new FormControl('', Validators.required),
+    changeUser: new FormControl('', Validators.required)
   }
   )
 
@@ -50,6 +50,7 @@ export class LoginComponent implements OnInit {
       const student = res.find((a: any) => {
         return a.userName === this.loginUser.value.userName && a.password === this.loginUser.value.password && a.changeUser === 'Öğrenci'
       })
+
       if (teacher) {
         this.showSpinner = true
         timer(3000).subscribe(() => {
@@ -60,16 +61,7 @@ export class LoginComponent implements OnInit {
       } else {
 
       }
-      if (student) {
-        this.showSpinner = true
-        timer(3000).subscribe(() => {
-          this.router.navigate(['/student'])
-          this.showSpinner = false
-        })
-        this.outService.sendUser(this.userName)
-      } else {
 
-      }
     })
 
 
