@@ -1,0 +1,105 @@
+{
+  "posts": [
+    {
+      "prompt": "“Sinekli Bakkal” Romanının Yazarı Aşağıdakilerden Hangisidir?",
+      "answerA": "Reşat Nuri Güntekin",
+      "answerB": "Halide Edip Adıvar",
+      "answerC": "Ziya Gökalp",
+      "answerD": "Ömer Seyfettin",
+      "id": 1
+    },
+    {
+      "prompt": "Aşağıda Verilen İlk Çağ Uygarlıklarından Hangisi Yazıyı İcat Etmiştir?",
+      "answerA": "Hititler",
+      "answerB": "Elamlar",
+      "answerC": "Sümerler",
+      "answerD": "Urartular",
+      "isCorrect": "B",
+      "id": 2
+    },
+    {
+      "prompt": "Tsunami Felaketinde En Fazla Zarar Gören Güney Asya Ülkesi Aşağıdakilerden Hangisidir?",
+      "answerA": "Endonezya",
+      "answerB": " Srilanka",
+      "answerC": "Tayland",
+      "answerD": "Hindistan",
+      "isCorrect": "A",
+      "id": 3
+    },
+    {
+      "prompt": "test 1",
+      "answerA": "deneme1",
+      "answerB": "deneme2",
+      "answerC": "deneme3",
+      "answerD": "deneme4",
+      "isCorrect": "A",
+      "id": 4
+    }
+  ],
+  "comments": [
+   
+    {
+      "userName": "ertugrul",
+      "password": "12",
+      "changeUser": "Öğrenci",
+      "id": 5
+    },
+    {
+      "userName": "ertugrul",
+      "password": "123",
+      "changeUser": "Öğrenci",
+      "id": 6
+    },
+    {
+      "userName": "ertuğrul",
+      "password": "28011999",
+      "changeUser": "Öğrenci",
+      "eMail": "ertugrulaktepe@piton.com.tr",
+      "phoneNumber": "05354561778",
+      "id": 7
+    },
+    {
+      "userName": "ahmet",
+      "password": "159753",
+      "changeUser": "Öğrenci",
+      "eMail": "ahmet@bla.com",
+      "phoneNumber": "053234561798",
+      "id": 8
+    },
+    {
+      "userName": "eylül",
+      "password": "159753",
+      "changeUser": "Öğrenci",
+      "eMail": "eylül@gmail.com",
+      "phoneNumber": "123456",
+      "id": 9
+    },
+    {
+      "userName": "",
+      "password": "",
+      "changeUser": "",
+      "eMail": "",
+      "phoneNumber": "",
+      "id": 10
+    },
+    {
+      "userName": "deneme2",
+      "password": "12345",
+      "changeUser": "Öğrenci",
+      "eMail": "ertugrulaktepe@piton.com.tr",
+      "phoneNumber": "123456789",
+      "id": 11
+    },
+    {
+      "userName": "hoca",
+      "password": "123",
+      "changeUser": "Öğretmen",
+      "eMail": "software.bla@gmail.com",
+      "phoneNumber": "12345678",
+      "id": 12
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,30 @@
+<div class="login">
+    <form class="form" [formGroup]="loginUser">
+        <div class="container">
+            <mat-form-field appearance="fill">
+                <mat-label>Kullanıcı Adı</mat-label>
+                <input class="form-control" formControlName="userName" matInput>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Şifre</mat-label>
+                <input class="form-control" type="password" formControlName="password" matInput>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Bir Giriş Seçiniz</mat-label>
+                <mat-select formControlName="changeUser">
+                    <mat-option value="Öğrenci">Öğrenci Girişi</mat-option>
+                    <mat-option value="Öğretmen">Öğretmen Girişi</mat-option>
+                </mat-select>
+
+            </mat-form-field>
+            <div class="button-group">
+                <button (click)="userLogin()" mat-button color="success">Giriş Yap</button>
+                <button routerLink="/sign" mat-button color=primary>Kayıt Ol</button>
+            </div>
+
+
+            <mat-spinner *ngIf="showSpinner"></mat-spinner>
+        </div>
+
+    </form>
+</div>

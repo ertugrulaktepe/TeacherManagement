@@ -1,0 +1,34 @@
+<div class="sign">
+    <form class="form" [formGroup]="signUser">
+        <div class="container">
+            <mat-form-field appearance="fill">
+                <mat-label>Kullanıcı Adı</mat-label>
+                <input class="form-control" formControlName="userName" matInput>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Şifre</mat-label>
+                <input class="form-control" type="password" formControlName="password" matInput>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>E-mail</mat-label>
+                <input class="form-control" type="email" formControlName="eMail" matInput>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Telefon Numarası</mat-label>
+                <input class="form-control" type="tel" formControlName="phoneNumber" matInput>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Bir Giriş Seçiniz</mat-label>
+                <mat-select formControlName="changeUser">
+                    <mat-option value="Öğrenci">Öğrenci Girişi</mat-option>
+                    <mat-option value="Öğretmen">Öğretmen Girişi</mat-option>
+                </mat-select>
+
+            </mat-form-field>
+
+            <button type="submit" (click)="signUp($event)" mat-button color="success">Kayıt Ol</button>
+
+        </div>
+
+    </form>
+</div>

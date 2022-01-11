@@ -1,0 +1,21 @@
+.create-quiz {
+  background-color: #e6e6e6;
+
+  .form-group {
+    align-items: center;
+    text-align: center;
+
+    .prompt {
+      width: 100%;
+    }
+
+    .answers {
+      display: flex;
+
+      .answer {
+        margin-left: 15px
+      }
+    }
+
+  }
+}

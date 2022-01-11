@@ -1,0 +1,57 @@
+<div class="create-quiz">
+    <div class="row">
+        <div class="container">
+            <div class="col-lg-12">
+                <form action="submit" (ngSubmit)="postQuiz(quiz.value)" class="form-group" [formGroup]="quiz">
+                    <div class="prompt">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Soru Giriniz</mat-label>
+                            <textarea formControlName="prompt" matInput></textarea>
+                        </mat-form-field>
+                    </div>
+                    <div class="answers">
+                        <div class="answer">
+                            <mat-form-field appearance="fill">
+                                <mat-label>Cevap Giriniz</mat-label>
+                                <input formControlName="answerA" matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="answer">
+                            <mat-form-field appearance="fill">
+                                <mat-label>Cevap Giriniz</mat-label>
+                                <input formControlName="answerB" matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="answer">
+                            <mat-form-field appearance="fill">
+                                <mat-label>Cevap Giriniz</mat-label>
+                                <input formControlName="answerC" matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="answer">
+                            <mat-form-field appearance="fill">
+                                <mat-label>Cevap Giriniz</mat-label>
+                                <input formControlName="answerD" matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="answer">
+                            <mat-form-field>
+                                <mat-label>Doğru Şıkkı Seçiniz</mat-label>
+                                <mat-select formControlName="isCorrect">
+                                    <mat-option value="A">A Şıkkı</mat-option>
+                                    <mat-option value="B">B Şıkkı</mat-option>
+                                    <mat-option value="C">C Şıkkı</mat-option>
+                                    <mat-option value="D">D Şıkkı</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-danger">Soru Ekle</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
